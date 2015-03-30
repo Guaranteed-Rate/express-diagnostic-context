@@ -1,6 +1,6 @@
 ## Express Diagnostic Context
 
-This package provides a middleware that takes requestId from the Express's request object and makes it available 
+This package provides a middleware that takes requestId and sessionId from the Express's request object and makes it available 
 at all points of the asyncronous execution for a given request.
 
 ```
@@ -12,6 +12,7 @@ app.use(function(req, res, next) {
 })
 app.use(edc.middleware());
 app.use(function(req, res, next) {
+    console.log(edc.getRequestId());
     console.log(edc.getRequestId());
     return next();
 });
