@@ -32,8 +32,7 @@ function getSessionId() {
 }
 
 function bind(callback) {
-    getNamespace().bind(callback);
-    return callback;
+    return getNamespace().bind(callback);
 }
 
 module.exports = {
