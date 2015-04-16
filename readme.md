@@ -22,7 +22,7 @@ app.use(function(req, res, next) {
 
 Currently, this is implemented using continuation-local-storage which has a limitation described [here|https://github.com/othiym23/node-continuation-local-storage/issues/6#issuecomment-32528908]
 
-The workaound is to bind the callback to the namespace explicitly prior to passing it to library that breaks the continuation chain. 
+The workaround is to bind the callback to the namespace explicitly prior to passing it to library that breaks the continuation chain. 
 ```
 db.collection("dumb").findOne({a:1}, edc.bind(function(err, result) {
     console.log("result for " + edc.getRequestID() + " is " + result);
