@@ -28,3 +28,10 @@ db.collection("dumb").findOne({a:1}, edc.bind(function(err, result) {
     console.log("result for " + edc.getRequestID() + " is " + result);
 }));
 ```
+
+if you are using promises, use https://github.com/othiym23/cls-q as follows:
+
+```
+var patchQ = require('cls-q');
+patchQ(edc.init());
+```

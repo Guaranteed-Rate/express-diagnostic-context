@@ -1,13 +1,11 @@
 {
   "name": "express-diagnostic-context",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Middleware that provides access to diagnostic info such as RequestId for use in loggers and passing to remote calls",
   "main": "edc.js",
   "scripts": {
     "test": "tap test/*.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "continuation-local-storage": "~3.1.4",
     "cls-middleware": "~1.1.0"
@@ -16,5 +14,9 @@
     "express": "~4.12.3",
     "request": "~2.55.0",
     "tap": "~0.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Guaranteed-Rate/express-diagnostic-context.git"
   }
 }
