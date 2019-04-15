@@ -1,3 +1,4 @@
+# DON'T USE, OUT OF DATE VERSION OF REQUEST WITH VULNERABILITY
 ## Express Diagnostic Context
 
 This package provides a middleware that takes requestId and sessionId from the Express's request object and makes it available 
